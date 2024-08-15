@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+     
+    <h2 style="text-align: center;" class="mb-4 mt-5">Currency Converter</h2>
+    <div class="container">
+        
+        <form class="col-md-5">
+            <div class="amount">
+                <p>Enter Amount</p>
+                <input type="number" id="currAmount" class="form-control">
+            </div>
+            <div class="dropdown">
+                <div class="from">
+                   <p>From</p>
+                   <div class="select-container">
+                        <select name="from" id="fromcurr" class="form-select">
+                            <option value="INR" selected>INR</option> <option value="USD">USD</option><option value="AED">AED</option> <option value="AFN">AFN</option> <option value="ALL">ALL</option> <option value="AMD">AMD</option> <option value="ANG">ANG</option> <option value="AOA">AOA</option> <option value="ARS">ARS</option> <option value="AUD">AUD</option> <option value="AWG">AWG</option> <option value="AZN">AZN</option> <option value="BAM">BAM</option> <option value="BBD">BBD</option> <option value="BDT">BDT</option> <option value="BGN">BGN</option> <option value="BHD">BHD</option> <option value="BIF">BIF</option> <option value="BMD">BMD</option> <option value="BND">BND</option> <option value="BOB">BOB</option> <option value="BRL">BRL</option> <option value="BSD">BSD</option> <option value="BTN">BTN</option> <option value="BWP">BWP</option> <option value="BYN">BYN</option> <option value="BZD">BZD</option> <option value="CAD">CAD</option> <option value="CDF">CDF</option> <option value="CHF">CHF</option> <option value="CLP">CLP</option> <option value="CNY">CNY</option> <option value="COP">COP</option> <option value="CRC">CRC</option> <option value="CUP">CUP</option> <option value="CVE">CVE</option> <option value="CZK">CZK</option> <option value="DJF">DJF</option> <option value="DKK">DKK</option> <option value="DOP">DOP</option> <option value="DZD">DZD</option> <option value="EGP">EGP</option> <option value="ERN">ERN</option> <option value="ETB">ETB</option> <option value="EUR">EUR</option> <option value="FJD">FJD</option> <option value="FKP">FKP</option> <option value="FOK">FOK</option> <option value="GBP">GBP</option> <option value="GEL">GEL</option> <option value="GGP">GGP</option> <option value="GHS">GHS</option> <option value="GIP">GIP</option> <option value="GMD">GMD</option> <option value="GNF">GNF</option> <option value="GTQ">GTQ</option> <option value="GYD">GYD</option> <option value="HKD">HKD</option> <option value="HNL">HNL</option> <option value="HRK">HRK</option> <option value="HTG">HTG</option> <option value="HUF">HUF</option> <option value="IDR">IDR</option> <option value="ILS">ILS</option> <option value="IMP">IMP</option> <option value="IQD">IQD</option> <option value="IRR">IRR</option> <option value="ISK">ISK</option> <option value="JEP">JEP</option> <option value="JMD">JMD</option> <option value="JOD">JOD</option> <option value="JPY">JPY</option> <option value="KES">KES</option> <option value="KGS">KGS</option> <option value="KHR">KHR</option> <option value="KID">KID</option> <option value="KMF">KMF</option> <option value="KRW">KRW</option> <option value="KWD">KWD</option> <option value="KYD">KYD</option> <option value="KZT">KZT</option> 
+                        </select>
+                    </div>   
+                </div>   
+                <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                <div class="to">
+                    <p>To</p>
+                    <div class="select-container">
+                         <select name="to" id="tocurr" class="form-select">
+                             <option value="INR">INR</option><option value="USD" selected>USD</option> <option value="AED">AED</option> <option value="AFN">AFN</option> <option value="ALL">ALL</option> <option value="AMD">AMD</option> <option value="ANG">ANG</option> <option value="AOA">AOA</option> <option value="ARS">ARS</option> <option value="AUD">AUD</option> <option value="AWG">AWG</option> <option value="AZN">AZN</option> <option value="BAM">BAM</option> <option value="BBD">BBD</option> <option value="BDT">BDT</option> <option value="BGN">BGN</option> <option value="BHD">BHD</option> <option value="BIF">BIF</option> <option value="BMD">BMD</option> <option value="BND">BND</option> <option value="BOB">BOB</option> <option value="BRL">BRL</option> <option value="BSD">BSD</option> <option value="BTN">BTN</option> <option value="BWP">BWP</option> <option value="BYN">BYN</option> <option value="BZD">BZD</option> <option value="CAD">CAD</option> <option value="CDF">CDF</option> <option value="CHF">CHF</option> <option value="CLP">CLP</option> <option value="CNY">CNY</option> <option value="COP">COP</option> <option value="CRC">CRC</option> <option value="CUP">CUP</option> <option value="CVE">CVE</option> <option value="CZK">CZK</option> <option value="DJF">DJF</option> <option value="DKK">DKK</option> <option value="DOP">DOP</option> <option value="DZD">DZD</option> <option value="EGP">EGP</option> <option value="ERN">ERN</option> <option value="ETB">ETB</option> <option value="EUR">EUR</option> <option value="FJD">FJD</option> <option value="FKP">FKP</option> <option value="FOK">FOK</option> <option value="GBP">GBP</option> <option value="GEL">GEL</option> <option value="GGP">GGP</option> <option value="GHS">GHS</option> <option value="GIP">GIP</option> <option value="GMD">GMD</option> <option value="GNF">GNF</option> <option value="GTQ">GTQ</option> <option value="GYD">GYD</option> <option value="HKD">HKD</option> <option value="HNL">HNL</option> <option value="HRK">HRK</option> <option value="HTG">HTG</option> <option value="HUF">HUF</option> <option value="IDR">IDR</option> <option value="ILS">ILS</option> <option value="IMP">IMP</option> <option value="IQD">IQD</option> <option value="IRR">IRR</option> <option value="ISK">ISK</option> <option value="JEP">JEP</option> <option value="JMD">JMD</option> <option value="JOD">JOD</option> <option value="JPY">JPY</option> <option value="KES">KES</option> <option value="KGS">KGS</option> <option value="KHR">KHR</option> <option value="KID">KID</option> <option value="KMF">KMF</option> <option value="KRW">KRW</option> <option value="KWD">KWD</option> <option value="KYD">KYD</option> <option value="KZT">KZT</option> 
+                         </select>
+                     </div>   
+                 </div>   
+            </div> 
+          <div id="convertedCurrency"></div>
+          <button onclick="fetchAmount()" type="button">Get Exchange Rate</button>
+        </form>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <script src="codes.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
